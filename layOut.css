@@ -1,0 +1,326 @@
+﻿@media screen and (max-width:613px){
+    p{
+        margin:0px;
+    }
+    h2{
+        margin:0px;
+
+    }
+    .big{
+        font-size:30px!important;
+    }
+}
+@media screen and (max-width:1015px)
+{
+    p {
+        margin:15px;
+    }
+
+    h2 {
+        margin: 15px;
+    }
+}
+@media screen and (max-width:837px){
+    p {
+        margin: 0px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+    .big{
+        font-size:40px!important;
+    }
+    .skill{
+        font-size:15px;
+        font-weight:500;
+    }
+    .tech{
+        margin-left:5%!important;
+        margin-right:5%!important;
+    }
+}
+
+
+body {
+    background-color: rgb(235, 255, 166);
+    margin:0px;
+    margin-top:10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(55,50px);
+    width: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    min-width:613px;
+}
+
+
+
+/*Nav Bar*/
+.me {
+    grid-column: 1/span 8;
+    grid-row: 2;
+    background-color: rgb(1, 4, 16);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(210, 227, 255);
+    font-size:20px;
+}
+    .me img {
+        height: 150px;
+        margin-left: 5%;
+        border-radius: 50%;
+        border: 10px solid rgb(235, 255, 166);
+    }
+    .me {
+        display:flex;
+    }
+    .me p{
+        margin-left:20px;
+    }
+    .nav{
+        grid-column:9/span4;
+        grid-row:2;
+        background-color:rgb(1, 4, 16);
+        font-size:20px;
+    }
+    .bar ul{
+        display:flex;
+        margin:10px;
+    }
+        .nav ul li {
+            flex-basis:40%;
+            list-style: none;
+            text-align:center;
+            border-radius:5%;
+        }
+.nav ul li a{
+    flex-basis: 40%;
+    list-style: none;
+    text-align: center;
+    border-radius: 5%;
+    padding:6px;
+}
+        .nav ul li a:hover{
+            color:rgb(235, 255, 166);
+            background-color:rgb(18, 21, 31)
+        }
+            .nav ul li a {
+                text-decoration: none;
+                color: rgb(210, 227, 255);
+            }
+
+        /*About Me*/
+        .about{
+            background-color:rgb(1, 4, 16);
+            color:rgb(210, 227, 255);
+            grid-column:span 12;
+            grid-row:5/span 9;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+        .about p{
+            font-size:50px;
+        }
+        .subtext{
+            font-size:20px!important;
+            margin-bottom:50px;
+        }
+        .about p,h2{
+            margin-right:10%;
+            margin-left:10%;
+        }
+        h2{
+            color:rgb(140, 179, 245);
+        }
+        .about p a{
+            text-decoration:none;
+            color:rgb(235, 255, 166);
+        }
+        .about p a:hover{
+            color:rgb(228, 255, 135);
+        }
+
+        /*Linkedin and github*/
+.bottom {
+    color: rgba(210, 227, 255,0.75);
+    font-size: 25px;
+    grid-column: span 12;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+.bottom a {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(140, 179, 245,0.75);
+    color:rgba(18, 21, 31,0.75);
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom:1%;
+}
+.bottom a:hover{
+    color:rgb(228, 255, 135);
+    background-color:rgb(140, 179, 245);
+}
+.bottom a:active{
+    color:rgb(1, 4, 16);
+    background-color:rgb(228, 255, 135);
+}
+        .bubble i{
+            margin-top:10px;
+        }
+
+        /*technical inventory*/
+        .tech{
+            grid-column:span 12;
+            grid-row:14/span 9;
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content:space-around;
+            margin-left:10%;
+            margin-right:10%;
+            align-items:center;
+        }
+            .tech h2 {
+                width: 100%;
+                color:rgb(1, 4, 16);
+            }
+        .skill{
+            width:16%;
+            height:50px;
+            flex-basis:16%;
+            background-color:rgb(1, 4, 16);
+            color:rgb(210, 227, 255);
+            border-radius:5%;
+            text-align:center;
+            align-content:center;
+            padding-top:1%;
+            padding-bottom:1%;
+        }
+        /*Projects*/
+.tuscany {
+    grid-column: span 6;
+    grid-row: 24/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(1, 4, 16);
+    background-image: url('tuscany villa.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+.villa {
+    width: 100%;
+    height:100%;
+    text-decoration: none;
+    color: rgb(210, 227, 255);
+    font-size:50px;
+    background-color:rgba(1, 4, 16,0.5);
+}
+    .villa div {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+.tuscany-villa {
+    grid-column: span 6;
+    grid-row: 24/span 9;
+    background-color:rgb(0, 4, 16);
+}
+.tuscany-villa p,h1{
+    margin-left:10%;
+    margin-right:10%;
+    color:rgb(210, 227, 255);
+    font-size:25px;
+}
+
+.shelter {
+    grid-column:7/ span 6;
+    grid-row: 33/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 21, 31);
+    background-image: url('shelter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.vpshelter {
+    grid-column: span 6;
+    grid-row: 33/span 9;
+    background-color: rgb(9, 12, 23);
+}
+
+    .vpshelter p, h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(210, 227, 255);
+        font-size: 25px;
+    }
+
+
+.lucky {
+    grid-column: span 6;
+    grid-row: 42/span 9;
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 35, 52);
+    background-image: url('luckynum.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.luckynumber {
+    grid-column: span 6;
+    grid-row: 42/span 9;
+    background-color: rgb(15, 19, 34);
+}
+
+    .luckynumber p, h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(210, 227, 255);
+        font-size: 25px;
+    }
+
+    /*contact me*/
+    .contact{
+        grid-column:span 12;
+        grid-row:51/span 3;
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+    .contact h1{
+        color:rgb(0, 4, 16);
+        font-size:35px;
+    }
+.contact-methods {
+    background-color: rgb(0, 4, 16);
+    grid-column: span 4;
+    grid-row: 54/span 2;
+    color: rgb(140, 179, 245);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+        .contact-methods a {
+            text-decoration: none;
+            color: rgb(140, 179, 245);
+        }
+        .contact-methods a:hover{
+            color:rgb(228, 255, 135);
+        }
